@@ -18,11 +18,11 @@
  <a href='https://huggingface.co/hagurin/yuubou_LoRA/tree/main'>https://huggingface.co/hagurin/yuubou_LoRA/tree/main</a>    スカートの裾から手を突っ込んで服の下で胸をまさぐるニッチ過ぎるLoRAの改良版  hand under skirt to breast V2を作ったので共有するやで    改良ポイントは下からの角度と若干ナナメからの角度、無理やり感と抵抗感をまぜたで    <a href='https://files.catbox.moe/3exihb.jpg'>https://files.catbox.moe/3exihb.jpg</a> <a href='https://files.catbox.moe/3exihb.jpg'>https://files.catbox.moe/3exihb.jpg</a>  <a href='https://files.catbox.moe/fwjyk9.jpg'>https://files.catbox.moe/fwjyk9.jpg</a> <a href='https://files.catbox.moe/qxkpot.jpg'>https://files.catbox.moe/qxkpot.jpg</a>    0.8-0.9ぐらいの重みで使ってね  今後は教師画像の選定をし直して、色んなポーズをとれるように試行錯誤中やで 
 <br>
 # 2. **https://mega.nz/**
-<br>## No.528:	2025/03/23(日) 23:03:51.48 ID:1+S+8fYp0
+<## No.528:	2025/03/23(日) 23:03:51.48 ID:1+S+8fYp0
  &gt;&gt;395 &gt;&gt;409  サンガツ、３枚ほど色付きノーマル毛画像と全部にcolored pubic hair入れたら色変更できるようになった  ただ使うモデルによって色が混ざったりするけどcolored pubic hair入れて出力したせいかもしれない  <a href='https://files.catbox.moe/7q5a3y.jpg'>https://files.catbox.moe/7q5a3y.jpg</a>  <a href='https://files.catbox.moe/dy97jo.jpg'>https://files.catbox.moe/dy97jo.jpg</a>    まんまん周りの毛の質感もうちょっと何とかならんかなって思うけどファイル置いとくね  <a href='https://mega.nz/file/etlERbwZ#QuNqREX_0jVTn1sPmnMZF-dVrb6pbOgSfIrh12qHkCQ'>https://mega.nz/file/etlERbwZ#QuNqREX_0jVTn1sPmnMZF-dVrb6pbOgSfIrh12qHkCQ</a> 
 <br>
 # 3. **https://civitai.com/**
-<br>## No.59:	2025/03/22(土) 18:52:31.72 ID:dqGO49Mo0
+## No.59:	2025/03/22(土) 18:52:31.72 ID:dqGO49Mo0
  リアス1.1が出ていたのでとりまLoRA学習専用のAnyIllustriousに1.1用追加や  ただ1.0用が流用できると思うのでlora作り直す必要はないかも  <a href='https://civitai.com/models/823108?modelVersionId=1564750'>https://civitai.com/models/823108?modelVersionId=1564750</a>    <a href='https://files.catbox.moe/v5zmgn.jpeg'>https://files.catbox.moe/v5zmgn.jpeg</a> 
 <br>
 ## No.110:	2025/03/22(土) 21:11:16.56 ID:uxals2vx0
