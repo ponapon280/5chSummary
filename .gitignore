@@ -1,2 +1,4 @@
 *.bat
 *.py
+*test*
+!README_test.md
