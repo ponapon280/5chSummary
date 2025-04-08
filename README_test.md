@@ -106,7 +106,6 @@
 - [sum](https://ponapon280.github.io/5chSummary/533/sum.html)
 - [mod](https://ponapon280.github.io/5chSummary/533/mod.html)
 - [url](https://ponapon280.github.io/5chSummary/533/url.html)
-<details>
 <summary>sum_prefiles</summary>
 
 - [sum_1](https://ponapon280.github.io/5chSummary/533/sum_prefiles/sum_1.html)
