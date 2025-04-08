@@ -2,3 +2,4 @@
 *.py
 *test*
 !README_test.md
+!README_test2.md
