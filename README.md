@@ -374,6 +374,7 @@
 - [sum](https://ponapon280.github.io/5chSummary/545/sum.html)
 - [mod](https://ponapon280.github.io/5chSummary/545/mod.html)
 - [url](https://ponapon280.github.io/5chSummary/545/url.html)
+- [civitai](https://ponapon280.github.io/5chSummary/545/civitai.html)
 
 > sum_prefiles
 >
