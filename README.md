@@ -367,6 +367,7 @@
 - [sum](https://ponapon280.github.io/5chSummary/573/sum.html)
 - [mod](https://ponapon280.github.io/5chSummary/573/mod.html)
 - [url](https://ponapon280.github.io/5chSummary/573/url.html)
+- [tools](https://ponapon280.github.io/5chSummary/573/tools.html)
 
 > sum_prefiles
 >
