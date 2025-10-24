@@ -1,7 +1,8 @@
 # File List
 
 [old file list 01](https://ponapon280.github.io/5chSummary/README_old_01.html)
-[old file list 01](https://ponapon280.github.io/5chSummary/README_old_02.html)
+
+[old file list 02](https://ponapon280.github.io/5chSummary/README_old_02.html)
 <details>
 <summary>588</summary>
 
