@@ -20,6 +20,8 @@
 - **WF共有**: SmoothMixAnimationStyle v1.7.1、LightX2V（720p動画3分）、HunyuanVideo1.5、TripleDetailer（乳首/目強化）、PainterLongVideoループ。TensorRT/sageattentionで高速化。
 
 ### 3. モデル/ツール紹介・Tips
+
+
 | モデル/ツール | 強み | 弱み/課題 | エロTips例 |
 |---------------|------|----------|------------|
 | **WAI/Illustrious/NAI** | 背景/3D動画/ヘイロー綺麗。ponyエロ◎。 | 指弱い。 | ふたなり不安定、太ももこきLoRA待ち。 |
@@ -29,6 +31,7 @@
 | **Wan2.2/SmoothMix** | プロンプト忠実、中出しLoRA安定。 | i2v舌動き不可、量子化ガチャ。 | 液体噴出（口/乳首）、リアスピザ欠け回避。 |
 | **その他** | Flux/Reforge高速、SAM3/3D表情差分、rouwei_gemmaプロンプト補助、FaceDetailer衣装替え。 | tagger精度低下（Danbooru Wiki変動）。 | アヘ顔ハート目難、anal object insertion、hair tie赤色化（Prompt editing）。 |
 
+
 - **共通Tips**: 勃起（bulge/covered penis）、乱交後ろ暴走回避、指6本（Adetailer無力）、動画motion_frames=20。音声LoRA（Anime-Llasa-3B 19h学習）。Seed固定/プロンプト支配力調整。
 
 ### 4. ハードウェア・購入相談
@@ -37,12 +40,15 @@
 - **ベンチ例**: 5090@2.9秒 > 3090@15秒。4090 48GB改造検討。電気代/メモリ高騰不満。
 
 ### 5. クラウドサービス・課金
+
+
 | サービス | 価格/特典 | リスク/反応 |
 |----------|-----------|-------------|
 | **Nano Banana Pro** | Pro 5万/年無制限、無料枠。 | ナーフ/リセット、APIラッパー（Fal.ai/Higgsfield）必須。 |
 | **higgsfield.ai** | PRO年払いブラフラセール（39ドル/月4K）。 | 解約不安、Creatorプラン推奨。 |
 | **Google Ultra/Gemini** | YouTube Premium付き、フォトショ統合。 | 優先低下/BAN（専用垢）。 |
 | **Grok X Premium** | 文章/画像エロ即出。 | 動画未、偽サイト横行。 |
+
 
 - ローカルvsクラウド：ローカル安定/エロ無限、クラウドポン出し/ナーフ食らい。
 
