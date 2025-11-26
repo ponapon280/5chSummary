@@ -15,6 +15,8 @@
 - **初心者即戦力**: Geminiでノード作成、Googleプロンプトガイド活用。
 
 ### 2. 動画/画像生成モデル比較
+
+
 | モデル | 強み | 弱み/備考 | 推奨用途 |
 |--------|------|-----------|----------|
 | **Wan2.2 / easywan2.2 / Smoothmix** | 長尺安定（PainterLongVideoで30秒超、3段サンプラー）、FP8/FP16低スペOK、LoRA（cum/lightx）活用 | LoRA干渉/ピストン減衰（強度調整）、RAM食い（GGUF推奨） | セックス動画（ピストン→中出し、ループ口パク）、アニメーションWF |
@@ -22,6 +24,7 @@
 | **Nano Banana Pro** | 文脈理解/思考出力、漫画4コマ、NSFW寛容（水着/おっぱい）、3D→2D変換 | 修正無視/ガチャ、規制（Pro版クレジット制、月2900円相当）、透かし | ストーリー/漫画生成、版権キャラ修正 |
 | **Flux2-dev** | アニメ調優位、高精度 | 64GB巨大（fp8 18GB VRAM、3080/12GBで4-7分/枚）、NSFWフィルター厳格（CSAM/NCII） | T2I/i2I（量子化待ち） |
 | **その他** | PainterLongVideo（MotionFrames/End Imageで繋ぎ改善）、FunControl/Animate（V2V楽）、Rouwei-Gemma（自然言語強いがエロ弱） | Hunyuan重低品質、Grokエロ祭り懐古（現在規制） | Gemini/ChatGPT（プロンプト補助/ストーリー） |
+
 
 - **WF共有例**: QwenDoubleKSampler（1step高速化外し品質UP）、SmoothMixAnimationStyle、Subgraphシード再利用。steps 2-2→3-3で安定。
 
@@ -32,12 +35,15 @@
 - **規制回避**: ローカル必須（クラウドエロNG）。局部隠し/汚物すり抜け、着衣パンチラ/ゴア可。全裸単体NG→下着べろちゅー。
 
 ### 4. ハードウェア/環境最適化
+
+
 | 用途 | 推奨スペック | 備考 |
 |------|--------------|------|
 | **基本生成** | VRAM12-16GB (3060/4060/3070Ti) + RAM64-128GB | fp16/GGUF量子化、低スペ耐え（Detailerオフ） |
 | **動画長尺/Qwen** | VRAM18GB+ (5090) + RAM128GB (DDR5) | 値上がり中（3ヶ月倍）、中古狙い |
 | **高速/学習** | RTX5090/Pro6000 + 1200W | BTO60万切り売り切れ、PCIe5.0微差、50Super/Ti待ち |
 | **クラウド代替** | vast.ai/Runpod/Nebius (5090 0.3-0.89$/h) | 不安定/覗きリスク、LoRA作成可 |
+
 
 - **問題点**: VRAM/RAM増大（wan2.5 80GB想定）、PyTorchクラッシュ、iGPU効果薄。電力/冷却限界、TPU/NVIDIA移行議論。
 
