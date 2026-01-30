@@ -1,0 +1,62 @@
+### 抽出された「ツール」に関する話題
+
+ログ全体をスキャンし、ComfyUI (comfy, confy含む)、A1111 (1111, webUI含む派生)、Forge (旧Forge, Forge1/2, reForge, EasyReforge, Easyforgeなど)、tiled diffusionなどの生成AIツール（UI/拡張/ワークフロー関連）に限定して抽出。モデル（NAI, Pony, illustrious/リアス/ill/IL, Noobai, FLUX, Wan, Qwenなど）関連話題は除外。grok APIやNeo, Z-Image/ZIT/QIE/QIなどのモデル由来ツールもモデル関連として除外。理由が明記されているものは併記。
+
+- **844**: Pose Editorも付いてQIE2511で出すらしい → QIE2511（ツール）言及。
+- **846**: ワイの旧forgeやと... いい加減re:foregeかEasyに置き換えるかなぁ → 旧forge, re:forge, Easy（置き換え検討）。
+- **856**: 結局Comfyに移行したで → Comfy（移行理由: Neoのバージョンアップで使えなくなったため）。
+- **857**: 旧Forgeはv-predに対応してないから無理 → 旧Forge（非対応指摘）。
+- **859**: バージョンアップで今まで使えてたもんが使えなくなるのはcomfyもそやで てかcomfyのが深刻やで → comfy（バージョンアップ問題指摘）。
+- **860**: ComfyUIからGrokのAPI使えるだけの話 → ComfyUI（API対応利点指摘、ただし制限あり）。
+- **863**: comfyui等々環境増殖し過ぎて意味不明状態 → comfyui（環境管理の煩雑さ指摘）。
+- **864**: EasyReforgeに入れ替えてみるわ → EasyReforge（入れ替え検討）。
+- **867**: 今から入れるならEasyは更新止まってるからやめといた方がええ 普通のReforgeをオススメする → Easy（更新停止で非推奨）、Reforge（推奨）。
+- **869**: 旧Forge (Forge1)ではなく新Forge (Forge2)... 今更EasyReforgeはやめておいたほうがいい 更新停止してるし → Forge1/Forge2, reForge, EasyReforge（更新停止・エラーで非推奨）。
+- **870**: easyはzuntanが「俺が当時実際に実行確認した環境をそのままお前らにも提供する」のスタンス → easy（提供スタンス説明）。
+- **871**: 旧Forgeはv-pred対応してたよなと思い返して... SNR設定 → 旧Forge（v-pred対応確認、設定必要）。
+- **872**: 今の環境壊れたらワイ君終了ってこと？ ClipとかLoraの見えないところでの調整とか文字通りいい感じにしてくれてる → EasyReforge（調整機能の利便性が高く手放せない理由）。
+- **873**: EasyReforgeインストールエラーの対応方法はissueを読めば書いてある → EasyReforge（インストールエラー対応情報あり）。
+- **874**: わいは次世代来るまでは旧フォージv0017ちゃんと添い遂げるで → 旧フォージ（継続使用宣言）。
+- **880**: 旧Forgeはv-pred対応してるけどたしか設定にチェックが必要だったはず SNRほげほげとか → 旧Forge, Reforge（設定チェック必要、対応確認）。
+- **881**: SNR設定は必須じゃないし、チェックいるのReforgeの方だっけ？ → Reforge（設定関連）。
+- **883**: Forge系はフォークしてはどっかで開発が止まるから大変そうだな → Forge系（開発停止の多さ指摘）。
+- **886**: 1111使ってるの俺だけかよ！ → A1111（使用宣言）。
+- **887**: A1111はまだメンテナー（コントリビューター？）がdevブランチを更新し続けてるから旧Forgeよりもマシかもしれん → A1111（メンテ継続で旧Forgeより優位）。
+- **888**: ワイもA1111ちゃんと仲良くしとるで…！ 最近は動画や音声に興味あってcomfyUIちゃんに浮気しとるけど…！ → A1111, comfyUI（動画/音声対応で浮気）。
+- **889**: QIE2511動かす環境作っていれば... WFはGGUFをロードするタイプだったのでサブグラフ弄って... → QIE2511（環境構築・カスタム方法記述、ComfyUI WF言及）。
+- **894**: おまいら画像生成はcomfyUIが標準? reforgeつかい続けてるワイはダメなやつなんや → comfyUI（標準扱い？）、reforge（継続使用）。
+- **895**: tiled diffusionでnoise inversion使えるの、多分A1111だけなんよな → tiled diffusion, A1111（noise inversion対応の独自性）。
+- **896**: ワイはジマゲのためにconfy入れたけどそのタイミングでforgeぶっ壊れてreforgeに引っ越ししたで！ → confy (ComfyUI), forge, reforge（移行経緯）。
+- **898**: ComfyUIは新モデルへの対応の速さとワンポチに機能自体を追加出来る点が利点だけど その利点が不要で単独で画像生成するだけならwebUIの方が利便性は上やないかな → ComfyUI（新モデル対応速く機能追加可能の利点）、webUI（単独生成の利便性上）。
+- **899**: wanに手を出すまではreforgeだったがUI切り替えずに画像生成からI2Vまでやりたいので今はcomfyui でもwildcardとかLoRAの管理なんかはA1111およびその派生の方が圧倒的にやりやすい → reforge, comfyui（UI一括でI2V可能の理由）、A1111派生（wildcard/LoRA管理の優位）。
+- **907**: confyはyamlからワイルドカードいけるん？ 以前やったけどそれができなくてEasyrefoge始めたら快適過ぎて離れなくなった → confy (ComfyUI, wildcard不可で離脱), Easyrefoge（快適で継続）。
+- **908**: 移行検討勢はWebUIで出来てた全ての事を最初からComfyUIで全部入りにしようとするから詰むんやと思うけどな → WebUI, ComfyUI（移行時の詰み指摘）。
+- **909**: いい加減comfyイキリもコンプも鬱陶しいんよ → comfy（イキリ指摘）。
+- **910**: wildcard系拡張ノード(いくつかある)に大体ついてるよ → ComfyUI（wildcard拡張ノード対応）。
+- **911**: 僕はeasyferorgeちゃん！ → easyferorge (EasyForge)。
+- **912**: reforgeやった…… → reforge。
+- **913**: comfyUIが事実上の標準ソフトウェアなんだから黙って受け容れるしかないねん → comfyUI（標準扱い）。
+- **914**: SDXLはWebUI系、Wan2.2とZimageはComfyUI 移行じゃなくてこれでええやん → WebUI系, ComfyUI（使い分け提案）。
+- **916**: そこまで来たらもうワークフロー切り替えるだけでいいんだから SDXLもComfyUIでよくねってなる → ComfyUI（ワークフロー切り替えの利便性）。
+- **919**: QI2512がなかなか優秀... QIE2511よりQI2512の方が画質良い気がする → QI2512, QIE2511（比較、ただしモデル由来で一部重複除外）。
+- **920**: 今できないこと無いから未だにeasyreforgeのままやわ → easyreforge（現状満足で継続）。
+- **921**: 外人にSDXLのWF見せたら複雑過ぎると言われた → WF（ComfyUI workflowの複雑さ指摘）。
+- **922**: easvreforgeのhyperdmdとかいうLoraをcomfyuiでやっても速度上がるんやろうか → easvreforge (EasyReforge), comfyui（高速化LoRA互換確認）。
+- **925**: 俺は最初は画像WebUI動画comfyUIでいいやんと思ったけど結局どっちもcomfyUIになりつつあるな → WebUI, comfyUI（統合移行）。
+- **926**: 蒸留LoRAも当たり前に動くよ？当然CFG1にすればさらに爆速だし → ComfyUI（高速化LoRA対応）。
+- **927**: tiled diffusionはあるけどnoise inversionはなかったと思う → tiled diffusion（ComfyUI拡張）。
+- **930**: easyreforgeは知らんが高速化loraならComfyUIでも使えるんじゃね → easyreforge, ComfyUI（高速化LoRA互換）。
+- **934**: 人の書いたプログラム読むみたいな苦痛があるんcomfyな → comfy（学習苦痛指摘）。
+- **935**: SDXL使う作方でもwebuiじゃ動かない要素を経由させるものも増えてきた... webui自体はやれること少ないし...comfyuiの情報調べて使う方が楽 → webui（動かない要素増・情報化石化で非推奨）、comfyui（情報豊富で楽）。
+- **942**: ComfyUI 0.11.1 アプデ完了 comfy-managerがらみもあって結構ダウンロード多い → ComfyUI（アップデート記述）。
+- **944**: ループノードとかを筆頭に直感的でなさすぎて気持ち悪いノードがチラホラある → ComfyUI（ノードの直感性不足指摘）。
+- **947**: comfyuiってグラボ変えたら入れ直しっていう認識でええ？ → comfyui（グラボ変更時の再インストール確認）。
+- **950**: torch 2.10.0+cu130のComfyUIと、torch 2.x.0+cu126のComfyUI 全然違うよね → ComfyUI（torch/cudaバージョン依存で再構築必要）。
+- **953**: ワイ1070から5060Tiやから作り直し安定っぽいやな ほかのtorch+cuda系のツールもそのままやと動かんとみたほうがええか → confy (ComfyUI, torch/cuda再構築必要)。
+- **956**: easyが需要あるのはほんとにダブルクリックだけで済むやつだから集団開発体制はたぶん無理 → easy（ダブルクリック利便性の需要）。
+- **957**: 貢献しない奴からあとで文句言われるだけやからcomfyUIでエロ作ってる方がええな → comfyUI（代替推奨）。
+- **958**: easyのポイントモザイク地味に便利だったからあれも移植したいな → easy（ポイントモザイク機能の便利さ）。
+- **965**: Load Diffusion Modelノードでdefaultからfp8に変えれば一時しのぎにはなると思うで → ComfyUIノード（VRAM対策）。
+- **969**: Qwen Image Edit 2511と3D Camera Controlのやつとどっちがええんやろ → Qwen Image Edit 2511（比較対象）。
+- **975**: Moody ZIB + ZIT Simple Workflow - V1というワークフローいいな Baceだけだとちょっと重いしNSFWは破綻しやすいけど Turboでうまく修整してくれて何より早い → Workflow（ComfyUI WFの利点: 修整・高速）。
+- **997**: 3D Camera Controlは自由に角度設定できているように見えて実は... VNCSS visual camera controlも同じQwen-Image-Edit-2511-Multiple-Anglesを使っている → 3D Camera Control, VNCSS（角度制御の限界指摘）。
