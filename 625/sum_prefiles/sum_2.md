@@ -49,7 +49,7 @@
 - **NVIDIA Nemotron-Nano-9B-v2-Japanese**（>>258）：Qwen3-8B超え。3090で60tok/s（>>394-395）。日常会話5-20秒。
 - **Kohya_ss Animaフォーク**（>>418）。
 - **環境例**（>>334, >>376）：RTX5080/128GBで安定。PyTorch 2.9.1+cu130/Python 3.13で速化？（>>376）。
-- **LM Studio**：Reasoning無効化（>>415）：チャットテンプレに`{%- set enable_thinking = false -%}`（>>427）。Prefillで`</think>`（>>422）。
+- **LM Studio**：Reasoning無効化（>>415）：チャットテンプレに{% raw %}`{%- set enable_thinking = false -%}`{% endraw %}（>>427）。Prefillで`</think>`（>>422）。
 
 ### 5. 雑談・炎上・自治
 - **初心者叩き**（>>394-433）：テンプレ追加提案（>>394）。過去スレ読め煽り（>>403-410）。「質問スレ使え」「ゴキブリ湧き」（>>411）。擁護派「コミュニティ終わり」（>>424）。
