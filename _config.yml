@@ -1,0 +1,5 @@
+defaults:
+  - scope:
+      path: "" # サイト内の全ファイルが対象
+    values:
+      render_with_liquid: false
