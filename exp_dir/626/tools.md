@@ -1,3 +1,26 @@
+### 思考プロセス
+【ステップ1: 今回の分析】今回のテキストの主要トピックは、特定ツール（ComfyUI, Forge系, easywan, nano, SAM3関連カスタムノード, その他ツール/ノード/プラグイン）の言及頻度・選好理由・問題点、および総括傾向。主要キーワード: Anima共同開発、メタデータ保持変換ソフト、Forge/ComfyUI中間ツール、easywan入門ツール、nano（4コマ漫画生成、grok比較、サイト詐欺）、SAM3高頻度、Swarm UI、D2 Send Eagle（メタデータ/タグ）、SD Prompt Reader、ComfyUI-SaveImageWithMetData、tiled diffusion、paruparu、anima LoRAトレーナー、共通選好（安定性/速度/拡張性/低スペック/メタデータ）。
+
+【ステップ2: 詳細抽出】テキスト内でComfyUI/メタデータ関連のキーワードが複数回登場するが、これらは各ツールの文脈で詳細化/言い換え（例: ComfyUIのメタデータ処理のバリエーション）であり除外。残るユニークなトピック（初出の具体ツール/理由/傾向）を厳選し、重複なしで抽出。
+
+### 新規トピックリスト
+- Anima共同開発とメタデータ保持変換ソフトの需要高（ComfyUI関連）
+- Forge/ComfyUIの中間難易度ツールの希望
+- easywanの言及頻度低とComfyUI苦手意識からの入門ツール問題
+- nanoの4コマ漫画生成テスト使用（grok比で小器用だがパンチライン弱）
+- nanoの使えるサイト怪しさとpro食べ放題詐欺問題
+- SAM3関連カスタムノードのComfyUI内高言及頻度
+- Swarm UI（Forge/ComfyUI代替提案）
+- D2 Send Eagle（メタデータ保存/フォルダ分け/タグ付け便利、モデル別カテゴリ）
+- SD Prompt Reader（改良版/Codex併用、Mask編集時メタデータ問題解決）
+- ComfyUI-SaveImageWithMetData（WebPメタデータ保存）
+- tiled diffusion（VRAM20GB効率、shift調整でシャープネス向上）
+- paruparu（WebUI系、ComfyUIデビュー後仕上げ用途）
+- animaスタンドアローンLoRAトレーナー（sd-scriptsインストール失敗代替）
+- 選好理由の共通点（安定性:最小化耐性/Gradio版差、速度:RNG CPUデフォ/高速生成、拡張性:WFカスタム/ノード最小化、低スペック対応、メタデータ処理）
+
+
+
 # 元の本文
 # 生成AI関連ツール抽出レポート
 
