@@ -7,7 +7,7 @@
 [old file list 03](https://ponapon280.github.io/5chSummary/README_old_03.html)
 
 
-<details>
+<details markdown="1">
 <summary>635</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/635/sum.html)
@@ -41,7 +41,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>634</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/634/sum.html)
@@ -75,7 +75,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>633</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/633/sum.html)
@@ -109,7 +109,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>632</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/632/sum.html)
@@ -143,7 +143,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>631</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/631/sum.html)
@@ -177,7 +177,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>630</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/630/sum.html)
@@ -211,7 +211,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>629</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/629/sum.html)
@@ -245,7 +245,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>628</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/628/sum.html)
@@ -279,7 +279,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>627</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/627/sum.html)
@@ -313,7 +313,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>626</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/626/sum.html)
@@ -347,7 +347,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>625</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/625/sum.html)
@@ -381,7 +381,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>624</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/624/sum.html)
@@ -406,7 +406,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>623</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/623/sum.html)
@@ -440,7 +440,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>622</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/622/sum.html)
@@ -474,7 +474,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>621</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/621/sum.html)
@@ -508,7 +508,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>620</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/620/sum.html)
@@ -542,7 +542,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>619</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/619/sum.html)
@@ -576,7 +576,7 @@
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>618</summary>
 
 - [sum](https://ponapon280.github.io/5chSummary/618/sum.html)
