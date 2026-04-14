@@ -6,7 +6,7 @@
 - 環境スペック: CUDA12.8/Python3.11/Torch2.7.1/VRAM12GB+/RAM128GB/Claude exeインストール/ドライバ595.79/596.02
 - 新ツール: 自作画像管理(Claude生成/多形式タグ/WD14)、Scribble Reference LoRA(CN代替)、Calibratedノード(色くすみ解消)
 - Qwen3.5-35B-A3B-Uncensored(Q5)/Gemma4 26B A4B/Q4_K_MとComfyUI-QwenVL/llama-cpp_vlmノード
-- LLM Tips: Thinking停止(`{%- set enable_thinking = false %}`)、画像→英文変換(CN代替)、DeepL後修正、「状況詳述容姿省け」、トークン切れ対策(系プロOFF)
+- LLM Tips: Thinking停止{% raw %}(`{%- set enable_thinking = false %}`){% endraw %}、画像→英文変換(CN代替)、DeepL後修正、「状況詳述容姿省け」、トークン切れ対策(系プロOFF)
 - Anima LoRA自作(1024再学習/TEなし)、高解像度LoRA(Civitai/dim32/0.6)、Adetailer乳首LoRA、世界樹ニキ調整法
 - エロTips: ガニ股(standing+(bowlegged pose:1.5))、twitching penis、panties around one leg、futanari不安定、SAM3性器検出(閾値0.06)
 - Hires/アップスケ: 1536OK/Tileノード(継ぎ目0.12デノイズ)/RealESRGAN_x4Plus注意
