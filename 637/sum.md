@@ -57,7 +57,7 @@ ComfyUI上級者向けイメージ強。更新エラー多発。
 Qwen3.5/Gemma4でAnima制御必須。
 
 - **人気モデル**: Qwen3.5-35B-A3B-Uncensored（Q5）、Gemma4 26B A4B/Q4_K_M。ComfyUI-QwenVL/llama-cpp_vlmノード。
-- **Tips**: シスプロ（Animaページ貼付+混合形式、masterpiece省略）。Thinking停止（`{%- set enable_thinking = false %}`）。画像→英文変換でCN代替。DeepL後修正。「状況詳述、容姿省け」。トークン切れ対策（系プロOFF）。
+- **Tips**: シスプロ（Animaページ貼付+混合形式、masterpiece省略）。Thinking停止{% raw %}(`{%- set enable_thinking = false %}`){% endraw %}。画像→英文変換でCN代替。DeepL後修正。「状況詳述、容姿省け」。トークン切れ対策（系プロOFF）。
 - **連携**: VRAM自動unload。コンテキスト長超え注意。
 
 ## LoRA/学習・生成Tips
