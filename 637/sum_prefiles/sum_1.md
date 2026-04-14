@@ -44,7 +44,7 @@
   - Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive (Q5推奨 >>189,190)。Animaと相性良（>>185）。
   - Gemma4 26B A4B/Q4_K_M（>>64,184）。
 - **Tips**:
-  - Thinking停止: `{%- set enable_thinking = false %}` (LM Studio >>194,201)。
+  - Thinking停止: {% raw %}{%- set enable_thinking = false %}{% endraw %} (LM Studio >>194,201)。
   - シスプロ: Animaページ貼付+「混合形式・推奨」「masterpiece省略」（>>191,196,202,236）。同一出力化成功（>>211）。
   - 聞き方: 「状況を詳述」「容姿省け」（>>190）。DeepL後修正。
 - **ローカルLLM問題**: コンテキスト長超えで記憶なし（>>62,111）。
