@@ -1,5 +1,23 @@
 # 🆕 新規トピック（前回からの差分）
-新規トピックなし
+- **Anima**: CircleStone Labs開発のアニメ・イラスト特化型画像生成モデル（2026年リリース）
+- **Forge Neo**: ComfyUIよりシンプルで柔軟な画像・ビデオ生成アプリ
+- **A1111 (Stable Diffusion webUI)**: 漫画制作等に利用される旧来の環境
+- **EasyAnima**: 初心者向け導入ツール
+- **kohya_ss / kohya_lora_param_gui**: LoRA作成ツール（Anima対応版あり）
+- **sd-scripts**: RAdamScheduleFree設定推奨のLoRA学習スクリプト
+- **AI-Toolkit**: LoRA学習用トレーナー
+- **TIPO / anima-tagger / Tagger**: 自動タグ生成および自然言語プロンプト生成ツール
+- **TensorBoard**: 学習ログの可視化・分析ツール
+- **LM Studio**: Qwen等のモデルを用いた英文画像説明文生成環境
+- **ollama / llama.cpp**: メモリ管理およびRadeon GPU対応のLLM実行環境
+- **Grok**: 規制の緩い成人向けプロンプト作成用LLM
+- **ChatGPT**: プロンプト作成、スクリプト作成、エラー解析用LLM
+- **Gemini**: 説明イラスト作成およびタグ付け用LLM
+- **Photoshop / PhotoRoom**: 高精度背景透過・時短処理ツール
+- **Krita**: 縦書き文字対応（v5.3〜）による漫画制作ツール
+- **CLIP STUDIO PAINT**: テキスト追加・仕上げ用漫画制作ツール
+- **Wai-Anima**: SAM3を利用可能なComfyUI用ワークフロー集
+
 
 ---
 # 元の本文
