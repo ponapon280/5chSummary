@@ -1,4 +1,21 @@
 # 🆕 新規トピック（前回からの差分）
+- ComfyUI（ノードベース画像生成UI）
+- Forge / ForgeNeo（SD WebUI系インターフェース）
+- Krita（AI連携ペイントソフト）
+- A1111（定番画像生成UI）
+- SwarmUI（FLUX/Anima動作用の代替UI）
+- StabilityMatrix（環境管理マネージャー）
+- Anima（アニメ特化型画像生成モデル）
+- PainterLongVideo（ComfyUI用カスタムノード）
+- SPEED（段階的解像度向上による高速化手法/ノード）
+- prompt（プロンプト管理・操作ツール）
+- Gemini / Grok / Claude / ChatGPT（プロンプト作成・支援用LLM）
+- LMStudio（ローカルLLM実行環境）
+- Antigravity（Gemini 3 Flash利用ツール）
+
+---
+# 元の本文
+# 🆕 新規トピック（前回からの差分）
 新規トピックなし
 
 ---
@@ -74,3 +91,4 @@
 - **概要**: Gemini 3 Flashなどを利用可能なツールです。
 - **選定理由・特徴**: 
     - アップデートによる高速化と知能向上が言及されており、ルール作り（調教）を行うことで質の高い出力が得られるとされています。
+
