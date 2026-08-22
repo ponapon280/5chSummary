@@ -1,71 +1,88 @@
 # 🆕 新規トピック（前回からの差分）
-### ツール: ComfyUI
-- カスタムノードの相性管理やvenv再構築などのトラブルシューティング
-- ModelAttentionBackendノードで「comfy kitchen attention」を選択可能
-- Sparse/Quantized AttentionによりFlashAttention比で2-5x高速化、特にMiniMax H3などの動画モデルで有効
-- Latent Upscaler / VAE upscale / Refinerによる高解像度生成時の時間短縮と画質調整
-- RTX Video Super Resolutionノード、MiniMax H3専用ノード、カメラモーションサンプルなどの追加機能
+### 生成AI関連ツールのレポート
+- ローカル環境向け画像・動画生成ツールのインターフェース・ノード・拡張機能に焦点
 
-### ツール: ComfyUI以外
-- DaVinci Resolveはモザイク処理・レンダリングに使われるがUIが複雑
-- YMM4、Aviutl、KdenliveはUIの簡易さと軽量性を理由に代替として推奨
-- Qwenシリーズはプロンプト生成やシステムプロンプト作成に利用し、thinking ON/OFFで挙動調整可能
-- ComfyUIのノードベース設計の柔軟性が低スペック・長尺動画生成向け最適化の核心
+### ComfyUI（comfy）
+- カスタムノード活用（kitchen-attention + block cache、SLA AttentionのLoRAローダー後配置）
+- モデル切り替えの容易さ
+- ブラウザ処理割り当ての挙動確認
+- NAIのようなフォームベースUIとの対比（ノードベースの柔軟性）
 
-### 参考情報
-- ComfyUIはオープンソースのノードベースGUI/APIで、画像・動画・3D・音声生成をサポート
-- comfy-kitchenはTriton/CUDAバックエンドの高速カーネルライブラリで、ComfyUIに統合済み
-- Sol-Attn / Sage Attentionは量子化Attentionによる高速化実装で、ComfyUI向けカスタムノードが存在
+### 選ばれている理由
+- 柔軟性と拡張性：LoRA適用、ControlNet連携、APIノード更新、ワークフロー構築に強い
+- UI特性：ノードベースにより精密制御・Attention最適化が容易で高度カスタマイズ向き
+
+### nano-banana（Nanobanana / Nano Banana）
+- 漫画・エロ漫画生成特化で自然言語指示によるコマ割り・セリフ・配置自動生成
+
+### 選ばれている理由
+- 敷居の低さ：手動プロンプト作成の手間が少なく自然言語だけで複数コマ生成可能
+- 用途適合：低品質・即興の漫画作成に適しコマ順制御を理解した使い分けが可能
+
+### ControlNet（ローカルツール）
+- 複雑な構図・複数キャラ・精密配置が必要な場面でNAIよりローカル使用を推奨
+
+### 選ばれている理由
+- 制御精度：複雑シーンでポーズ・配置・複数キャラの精密制御が容易
+
+### その他のツール・ワークフロー関連
+- ローカルツールの優位性（制御性・拡張性・カスタマイズ性・パフォーマンス）を強調
+- 用途（漫画生成・精密制御・高速安定生成）によるツール使い分け
+
+### Web検索による参考情報
+- Nano Banana / Nano Banana Pro：Gemini系で自然言語＋画像入力による一貫性ある漫画生成に強い
+- ControlNet：Stable Diffusion向け条件制御ネットワークでポーズ・深度・エッジ制御を実現
+- 情報は2026年8月時点の検索結果に基づく
 
 ---
 # 元の本文
-**生成AI関連ツールレポート（ComfyUI系中心）**
+**生成AI関連ツールのレポート**
 
-ログから抽出された話題は、ほぼすべて**ComfyUI**およびそのカスタムノード・ワークフロー最適化に関するものです。ComfyUIはノードベースのUI設計により高い拡張性を持ち、最新モデルへの迅速な対応や柔軟なワークフロー構築が可能である点が繰り返し評価されています。特に低スペック環境（例: RAM 32GB、VRAM 6-12GB程度）での長尺動画生成（MiniMax H3系など）を実現するための最適化が主な焦点です。以下に主なツールと選定理由をまとめます。
+提供されたテキストから抽出された生成AIツールは、主にローカル環境での画像・動画生成ワークフローを支えるインターフェース・ノード・拡張機能に焦点が当てられています。モデル名（NAI、Anima、MiniMaxなど）は除外し、ツール関連の言及のみを対象としています。以下に主なツールをまとめ、選ばれている理由（テキスト内の文脈）を明記します。
 
-### 1. ComfyUI（本体・公式ワークフロー・カスタムノード管理）
-- **選ばれている主な理由**:
-  - ノードベースUIの柔軟性・拡張性が高い（カスタムノードの開発・組み合わせが容易で、A1111/webUI比で優位）。
-  - 最新モデルへの0デイ対応が速く、コミュニティの活発さ・オープンソース性により持続的に進化。
-  - 公式テンプレートが低VRAM環境で特に強く、int8変換時などの量子化処理も安定。
-  - ワークフロー作成・管理が容易（ChatGPT/Geminiに依頼して自動生成する事例多数）。
-  - リモート操作や環境最適化オプション（`--fast-disk`、`pinned memory`）により低スペック勢でも実用可能（RAM消費抑制のトレードオフあり）。
-- **具体的な活用**:
-  - 最新版更新による速度向上（例: 生成時間が大幅短縮）。
-  - カスタムノードの相性管理、venv再構築などのトラブルシューティング。
-  - 動画生成時のVRAM節約ノード（chunk、Clear VRAMなど）の組み合わせ。
+### 1. ComfyUI（comfy）
+ComfyUIはノードベースのワークフロー構築ツールとして複数回言及されています。主な用途は：
+- メモリ使用量の最適化（LLMとの同時運用時の改善）
+- カスタムノードの活用（kitchen-attention + block cache、SLA AttentionのLoRAローダー後配置など）
+- モデル切り替えの容易さ
+- ブラウザ処理割り当ての挙動確認
+- NAIのようなフォームベースUIとの対比（ノードベースの柔軟性）
 
-### 2. Comfy Kitchen / comfy-kitchenAttention（Attention最適化）
-- **選ばれている理由**: 行列演算（特にAttention）をC++/CUDA/Tritonで高速化。Sage AttentionやSol-Attnからの移行で速度向上と画質改善が期待され、長尺動画生成（15秒程度）の爆速化に寄与。Spectrumオンとの併用でさらに効果を発揮するケースあり。int8 quantized attentionによりVRAM削減も可能。
-- **関連ノード**: ModelAttentionBackendノードで「comfy kitchen attention」を選択。
+**選ばれている理由**:
+- **柔軟性と拡張性**: LoRA適用、ControlNet連携、APIノード更新、ワークフロー構築・カスタマイズに強く、複雑な処理をノード接続で実現可能。
+- **パフォーマンス**: SageAttentionより安定性・速度で優位（例: 5090環境で120秒程度、約10%高速化）。メモリ使用量が改善され、高負荷時でも快適。
+- **UIの特性**: ノードベースにより精密制御が可能で、モデル切り替えやAttention系最適化が容易。フォームベースUIより高度なカスタマイズを求めるユーザーに適する。[[1]](https://medium.com/diffusion-doodles/comfyui-a-new-world-of-image-generation-51cad944ff7a)
 
-### 3. Sol-Attn / Sage Attention系（Patch Sol-Attn (MiniMax)など）
-- **選ばれている理由**: Sparse/Quantized Attentionによる2-5x程度の高速化（FlashAttention比）。MiniMax H3などの動画モデルで特に有効で、メモリ効率化と速度向上を実現。NVIDIA Sol-Attn Triton kernelを基にしたカスタム実装が多く、低スペック環境での運用を支える。
+### 2. nano-banana（Nanobanana / Nano Banana）
+漫画・エロ漫画生成に特化したツールとして言及。自然言語指示（「こういう漫画描いて」）でコマ割り、セリフ、配置、効果音、吹き出しを自動生成する点が特徴。キャラ画像をアップロードしての内容指定も可能。
 
-### 4. Context Loop（MiniMax H3用ワークフロー）
-- **選ばれている理由**: シーン追加・連結生成が容易で、既存動画の続きを再帰的に生成可能。VRAM/RAM使用量がほぼ変わらず「無限連結」の可能性があり、低スペック環境（RAM 32GB）でも動作しやすい。Approve&continueボタンやエディターノードとの組み合わせで操作性が向上し、ComfyUI苦手民でも扱いやすい。
+**選ばれている理由**:
+- **敷居の低さ**: 手動プロンプト作成の手間が少なく、自然言語だけで複数コマの漫画を生成可能。既存ツールとの対比で「一般に流行る」ための条件として評価。
+- **用途適合**: 低品質・即興のクソ画像や漫画作成に適しており、コマ順制御の特性を理解した上で使い分けられるツールとして挙げられる。[[2]](https://anifusion.ai/blog/mastering-nano-banana-pro-comic-manga-generation/)
 
-### 5. その他のComfyUI関連機能・ノード
-- **Latent Upscaler / VAE upscale / Refiner**: 高解像度生成時の時間短縮や画質調整（hires fix的な用途）。Refineはアプスケ時の画質向上に使うが処理が遅いとの指摘あり。
-- **Comfy MCP**: AIエージェント（Claudeなど）からのリモート操作・ワークフロー編集を自然言語で可能にし、サクサクした操作性が評価。
-- **その他**: RTX Video Super Resolutionノード（低解像度画質補完）、MiniMax H3専用ノード（Video/Audio latent分離）、カメラモーションサンプルなど。
+### 3. ControlNet（ローカルツール）
+複雑な構図・複数キャラ・精密配置が必要な場面で言及。NAI単体よりローカル環境での使用を推奨。
 
-### 6. ComfyUI以外のツール
-- **動画編集・後処理ツール**:
-  - **DaVinci Resolve**: モザイク処理・レンダリングに使用されるが、UIが複雑で扱いにくいとの不満多数。
-  - **代替（YMM4、Aviutl、Kdenlive）**: UIの簡易さ・軽量性を理由に推奨（クリック操作中心のモザイク処理など）。
-- **LLM関連（プロンプト作成補助）**:
-  - Qwenシリーズ（プロンプト生成・システムプロンプト作成）：thinking ON/OFFで挙動調整可能。
-  - Gemini/ChatGPT：ワークフロー作成・トラブルシューティングに多用されるが、複雑ケースでループしやすい。
-- **その他言及**: LM Studio（モデル設定調整）、Antigravity IDE（コード作業）、RVC（過去の音声ツール）、VSCode（Python環境管理）など。Heretic（LLM検閲解除関連）も一部で検証。
+**選ばれている理由**:
+- **制御精度**: 複雑なシーンでNAIより優位。ポーズ・配置・複数キャラの制御が容易で、精密な出力が求められる場合に選択。[[3]](https://stable-diffusion-art.com/controlnet/)
 
-全体として、**ComfyUIのノードベース設計とカスタム機能の柔軟性**がツール選択の核心で、特に低スペック・長尺動画生成向けの最適化が活発です。将来的にはより優れたUIの登場可能性も指摘されていますが、現在のデファクトスタンダードとして位置づけられています。
+### 4. Forge（Stable Diffusion WebUI Forge）
+タグ予測などの補助機能の使い勝手でNAIと比較。
+
+**選ばれている理由**:
+- **補助機能の充実**: Forge以降のWebUI環境と比べてタグ予測などが便利で、生成補助の観点から言及。[[4]](https://github.com/lllyasviel/stable-diffusion-webui-forge)
+
+### 5. その他のツール・ワークフロー関連
+- **生成補助・連打ツール**: 無制限生成対策として言及。外部ツール使用の有無が制限回避の観点で議論される。
+- **動画生成ワークフロー**（10erosなど）: webpアニメ形式の保存が編集前提で便利。複数動画結合時の画質劣化を考慮したツール選択。
+- **MiniMax H3関連**: カメラワークの一貫性（プロンプトでの制御しにくさ）がツール特性として指摘。
+
+全体として、テキストでは**NAIなどのクラウド/フォームベースサービスに対するローカルツールの優位性**（制御性、拡張性、カスタマイズ性、パフォーマンス）が繰り返し強調されています。ツール選択は用途（漫画生成、精密制御、高速安定生成）によって使い分けられる点が特徴です。
 
 ## Web検索による参考情報
-- **ComfyUI**: オープンソースのノードベース拡散モデルGUI/API/バックエンド。Stable Diffusionなどを基に画像・動画・3D・音声生成をサポート。Comfy-Org/ComfyUIリポジトリが公式で、comfy.orgにてDesktop/Cloud版が提供される。[[1]](https://github.com/comfy-org/comfyui)[[2]](https://comfy.org/)
-- **comfy-kitchen / comfy-kitchenAttention**: Comfy-Org/comfy-kitchenリポジトリの高速カーネルライブラリ（Triton/CUDAバックエンド）。ComfyUI本体に統合され、--use-ck-attentionフラグやModelAttentionBackendノードで利用可能。Sage Attentionなどからの移行で速度・品質向上を実験的に提供。[[3]](https://github.com/Comfy-Org/comfy-kitchen)[[4]](https://www.reddit.com/r/StableDiffusion/comments/1vl8wqw/comfyui_comfykitchen_attention_speed_up/)
-- **Sol-Attn / Sage Attention**: SageAttention（thu-ml/SageAttention）は量子化Attentionによる高速化実装。ComfyUI向けにComfyUI-sol-attnやkijai関連ノードが存在し、MiniMax H3などで15-20%程度のブースト報告あり。[[5]](https://github.com/thu-ml/sageattention)[[6]](https://github.com/Saganaki22/ComfyUI-sol-attn)
-- **Context Loop**: ethanfel/ComfyUI-MiniMaxH3-Contex-Loopなどの専用リポジトリが存在。MiniMax H3のシーン連結・モーション/オーディオ継続生成向けワークフロー。[[7]](https://github.com/ethanfel/ComfyUI-MiniMaxH3-Contex-Loop)
-- **Comfy MCP**: comfy.org/mcpにて提供。Model Context Protocol経由でAIエージェントからComfyUIを操作（画像/動画生成、ワークフロー編集）。Cloud/Local両対応でパブリックベータ中。[[8]](https://comfy.org/mcp/)
+- **ComfyUI**: 2026年時点でノードベースの強力なオープンソースAI画像・動画生成エンジンとして広く使用。カスタムノードによる拡張性、LoRA/ControlNet対応、ローカル/クラウド両対応が強み。メモリ最適化やワークフロー柔軟性が評価され、技術ユーザー向けに人気。[[5]](https://comfy.org/)
+- **Nano Banana / Nano Banana Pro**: Google DeepMindの画像生成・編集モデル（Gemini系）。2025年頃に登場し、自然言語＋画像入力による一貫性ある漫画・コミック生成に強い。キャラ一貫性やレイアウト自動化が特徴で、簡単な指示で高品質出力が可能。[[6]](https://blog.google/innovation-and-ai/products/nano-banana-pro/)
+- **Forge (Stable Diffusion WebUI Forge)**: AUTOMATIC1111のフォークとして高速化・リソース最適化を目的に開発。低VRAM環境での高速生成や拡張機能が特徴。[[4]](https://github.com/lllyasviel/stable-diffusion-webui-forge)
+- **ControlNet**: Stable Diffusion向けの条件制御ネットワーク。ポーズ・深度・エッジなどの追加条件で精密制御を実現し、2021年以降の標準的な拡張機能。[[7]](https://www.reddit.com/r/StableDiffusion/comments/13n98un/controlnet_v11_a_complete_guide/)
 
-（モデル名・バージョン具体例はログ除外方針に従い、一般情報に留めています。）
+これらの情報は2026年8月時点の検索結果に基づきます。
