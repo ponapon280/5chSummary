@@ -6,4 +6,4 @@
 !README_test2.md
 !test_link.md
 *.bkup
-!exp_dir/*
+!exp_dir/**
