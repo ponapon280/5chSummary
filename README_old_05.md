@@ -10,6 +10,8 @@
 
 [old file list 04](https://ponapon280.github.io/5chSummary/README_old_04.html)
 
+[old file list 06](https://ponapon280.github.io/5chSummary/README_old_06.html)
+
 
 <details markdown="1">
 <summary>677</summary>
